@@ -14,7 +14,7 @@ int ArrayList_numElems(ArrayList * arrList);
 int ArrayList_length(ArrayList * arrList);
 void ArrayList_appendCopy(ArrayList * arrList, void * newElem);
 void ArrayList_prependCopy(ArrayList * arrList, void* newElem);
-void ArrayList_insert(ArrayList * arrList,int i, void * newElem);
+void ArrayList_insertCopy(ArrayList * arrList,int i, void * newElem);
 void * ArrayList_get(ArrayList * arrList, int i);
 void ArrayList_printAsInt(ArrayList * arrList);
 void ArrayList_printAsChar(ArrayList * arrList);
