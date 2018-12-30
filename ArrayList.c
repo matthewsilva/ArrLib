@@ -97,6 +97,13 @@ void * ArrayList_get(ArrayList * arrList, int i)
     return (arrList->elems) + (arrList->elemSize * i);
 }
 
+void * ArrayList_set(ArrayList * arrList, int i, void * newElem)
+{
+    void * src = newElem;
+    void * dest = ArrayList_get(arrList, i);
+    memcpy(dest, src, arrList->elemSize);
+}
+
 void ArrayList_printAsInt(ArrayList * arrList)
 {
     printf("[");
